@@ -23,9 +23,9 @@ namespace TTA
 
         public BasicCounterBuilder() : this(new Player()) { } 
 
-        public BasicCounterBuilder(Player p)
+        public BasicCounterBuilder(Player player)
         {
-            player = p;
+            this.player = player;
 
             this.Orientation = StackOrientation.Horizontal;
             this.Margin = new Thickness(8, 8, 8, 0);
@@ -36,7 +36,7 @@ namespace TTA
 
             playerName = new Entry
             {
-                Text = player.Name,
+                Text = this.player.Name,
                 IsVisible = true,
                 Opacity = 0.75,
                 HorizontalTextAlignment = TextAlignment.Start,
@@ -63,7 +63,7 @@ namespace TTA
 
             scoreLabel = new Label
             {
-                Text = player.Score.ToString(),
+                Text = this.player.Score.ToString(),
                 IsVisible = true,
                 Opacity = 0.75,
                 HorizontalTextAlignment = TextAlignment.Center,
