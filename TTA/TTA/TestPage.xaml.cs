@@ -9,15 +9,15 @@ using Xamarin.Forms.Xaml;
 
 namespace TTA
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TestPage : ContentPage
-	{
-		public TestPage ()
-		{
-			InitializeComponent ();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class TestPage : ContentPage
+    {
+        public TestPage()
+        {
+            InitializeComponent();
 
             // A text swap to check that the code-behind has been properly linked to the view
             testPageLabel.Text = "Oopsies... it's been swapped on class initialization!";
-		}
-	}
+        }
+    }
 }

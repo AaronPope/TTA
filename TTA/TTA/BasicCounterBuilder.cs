@@ -21,7 +21,7 @@ namespace TTA
         Label scoreLabel;
         Entry playerName;
 
-        public BasicCounterBuilder() : this(new Player()) { } 
+        public BasicCounterBuilder() : this(new Player()) { }
 
         public BasicCounterBuilder(Player player)
         {
@@ -133,10 +133,9 @@ namespace TTA
 
         private void UpdatePendingScore()
         {
-            if (pendingScoreChange != 0)
-                scoreLabel.Text = String.Format("{0} ({1})", player.Score, pendingScoreChange);
-            else
-                scoreLabel.Text = player.Score.ToString();
+            scoreLabel.Text = pendingScoreChange != 0
+                    ? String.Format("{0} ({1})", player.Score, pendingScoreChange)
+                    : player.Score.ToString();
         }
 
 

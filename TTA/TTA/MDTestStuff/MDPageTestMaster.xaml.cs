@@ -28,7 +28,7 @@ namespace TTA
         class MDPageTestMasterViewModel : INotifyPropertyChanged
         {
             public ObservableCollection<MDPageTestMenuItem> MenuItems { get; set; }
-            
+
             public MDPageTestMasterViewModel()
             {
                 MenuItems = new ObservableCollection<MDPageTestMenuItem>(new[]
@@ -40,7 +40,7 @@ namespace TTA
                     new MDPageTestMenuItem { Id = 4, Title = "Page 5" },
                 });
             }
-            
+
             #region INotifyPropertyChanged Implementation
             public event PropertyChangedEventHandler PropertyChanged;
             void OnPropertyChanged([CallerMemberName] string propertyName = "")

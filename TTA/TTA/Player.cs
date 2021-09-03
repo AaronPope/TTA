@@ -19,7 +19,7 @@ namespace TTA
         /// <summary>
         /// Creates a new player with a random name and score of 0
         /// </summary>
-        public Player() 
+        public Player()
             : this(0) { }
 
         /// <summary>

@@ -11,7 +11,7 @@ namespace TTA
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : ContentPage
-	{
+    {
 
         List<Player> players = new List<Player> {
             new Player(50, "Player 1"),
@@ -19,7 +19,7 @@ namespace TTA
         };
 
         public MainPage()
-		{
+        {
             InitializeComponent();
 
             TapGestureRecognizer tgr = new TapGestureRecognizer();
@@ -58,7 +58,7 @@ namespace TTA
         {
             outerStackLayout.Children.Insert(outerStackLayout.Children.Count - 1, new BasicCounterBuilder(player));
         }
-        
+
         private void AddNewPlayer(object sender, EventArgs e)
         {
             AddNewRandomPlayers(1);
