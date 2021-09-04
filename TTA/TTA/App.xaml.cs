@@ -5,6 +5,8 @@ using System.Text;
 
 using Xamarin.Forms;
 
+using Phoneword;
+
 namespace TTA
 {
     public partial class App : Application
@@ -13,7 +15,7 @@ namespace TTA
         {
             InitializeComponent();
 
-            MainPage = new TTA.MainPage();
+            MainPage = new Phoneword.MainPage();
         }
 
         protected override void OnStart()
